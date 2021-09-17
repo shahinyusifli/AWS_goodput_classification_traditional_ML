@@ -1,0 +1,5 @@
+Each line of the dataset file summarizes the result of a single experiment formed by a download request and a TCP traceroute when available.
+Line format:
+<service (Standard/CloudFront)>|<source region>|<cloud region>|<download IP address>|<object size [KiB]>|<elapsed download time [s]>|<goodput [KiB/s]>|<3x round-trip latencies [ms]>|<number of hops toward destination>|<download timestamp>|<traceroute timestamp>
+
+I try to create classification models for defining which combinations have goodput. I define 1587.8199350583818 KiB/s as border value. I have used some primitive classification estimators without any hyper-parameter turning and model selection.  
